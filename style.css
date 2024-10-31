@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('images/bcg.png'); /* 使用背景图片 */
+    background-size: cover; /* 背景覆盖整个区域 */
+    background-position: center; /* 背景居中 */
+    color: #333; /* 深灰色文本 */
+    text-align: center; /* 居中对齐文本 */
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3em;
+    color: #040313; /* 深蓝色标题 */
+    margin-bottom: 20px;
+}
+
+.gameArea {
+    display: flex; /* 使用弹性布局 */
+    align-items: center; /* 垂直居中对齐 */
+    justify-content: center; /* 水平居中对齐 */
+    gap: 20px; /* 元素间隔 */
+    margin: 20px 0; /* 上下间距 */
+}
+
+#playerImage img {
+    width: 300px; /* 玩家图片宽度 */
+    height: auto; /* 自适应高度 */
+}
+
+#output {
+    
+    background-image: url('images/bac.png'); /* 设置背景图片 */
+    background-size: cover; /* 背景覆盖整个区域 */
+    background-position: center; /* 背景居中 */
+    color: #fff; /* 白色文本，确保在深色背景上可读 */
+    border: 2px solid #0066cc; /* 深蓝色边框 */
+    
+    padding: 15px;
+    border-radius: 10px;
+    min-height: 100px; /* 最小高度 */
+    width: 80%; /* 自适应宽度 */
+    margin: 0 auto; /* 水平居中 */
+    flex-grow: 1; /* 自适应填满剩余空间 */
+    font-size: 2em; /* 调整字体大小 */
+    color: #f0f4f6; /* 调整字体颜色 */
+}
+
+#eventImage {
+    width: 400px; /* 事件图片宽度 */
+    height: auto; /* 自适应高度 */
+}
+
+#eventImage img {
+    max-width: 100%; /* 图片自适应宽度 */
+    border-radius: 10px; /* 圆角 */
+}
+
+#choiceButtons {
+    display: flex;
+    justify-content: center; /* 按钮居中对齐 */
+    gap: 10px; /* 按钮之间的间隔 */
+    margin-top: 20px;
+}
+
+button {
+    background-color: #0066cc; /* 深蓝色按钮 */
+    color: white; /* 白色文本 */
+    border: none;
+    border-radius: 5px; /* 圆角按钮 */
+    padding: 10px 20px; /* 按钮内边距 */
+    font-size: 2em; /* 按钮字体大小 */
+    cursor: pointer; /* 鼠标悬停时手型光标 */
+    transition: background-color 0.3s; /* 动画效果 */
+}
+
+button:hover {
+    background-color: #004080; /* 按钮悬停时颜色 */
+}
+
+.hidden {
+    display: none; /* 隐藏元素 */
+}
